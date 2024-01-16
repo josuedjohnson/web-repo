@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name = "viewport" content = "with=device=width, initial-scale =1.0">
+    <title>Josue Johnson</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">;
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><a href="https://www.ufl.edu/"    ><img src="uflogo.png"></a></a>
+            <div class="nav-links" id="navLinks"> 
+               <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">RESUME</a></li>
+                    <li><a href="">PROJECTS</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+<div class = "text-box">
+    <h1 class = "highlight">Welcome to my website!</h1>
+    <p>Hello, I am Josue Johnson. I am an undergrad student at the University of Florida studying Computer Science.</p>
+    <a href="" class = "hero-btn">Click Here to Contact Me</a>
+</div>
+    </section>
+<!----ABOUT----->
+<section class="about">
+    <h1>About Me</h1>
+    <p>I am a first generation latino who is passionate about technology and the endless opportunites that can come from it. In my free time I love to play piano and watch basketball.   </p>
+    </div>
+    <hr>
+</section>
+
+<!----RESUME---->
+<section class="resume">
+    <h1>My Resume</h1>
+    <p>You can view my Resume <a href="https://drive.google.com/file/d/1VRHEi-8p8p8jhjpp3C9S1WDVu2jadl3A/view?usp=sharing" target="_blank">here!</a></p>
+    <hr>
+</section>
+
+<!----PROJECTS---->
+<section class="projects">
+    <h1>My Projects</h1>
+    <p>Here is a list of the projects I have created</p>
+    <hr>
+    
+
+    <div class="row">
+        <div class="projects-col">
+            <div class="firstimg">
+            <img src="pakudex.png">
+        </div>
+                <h3>PAKUDEX</h3>
+                <p>This project is an engaging object-oriented program which allows you to catalog and evolve mythical creatures called "Pakuri".</p>
+                <hr>
+        </div>
+        <div class="projects-col">
+            <img src="RLE.png">
+                <h3>RLE IMAGE ENCODER</h3>
+                <p>This project used routines I created in order to encode and decode image data using run-length encoding, which is a compression technique.</p>
+
+        <hr>
+        </div>
+        <div class="projects-col">
+            <img src="454727-PF8Y1Q-736.jpg">
+                <h3>THIS WEBSITE</h3>
+                <p>For my personal website, I deveolped HTML and CSS code to create a visually appealing and functional site.</p>
+        <hr>
+        </div>
+    </div>
+    
+</section>
+
+<!----CONTACT---->
+<section class = "contact">
+        <h1>Contact Me</h1>
+        <hr>
+        <p>If you have any inquiries feel free to get in touch with me</p>
+    <div class="contact-box">
+        <div class="contact-left">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="92b34363-e965-46f4-9d5c-d4ebcab9e569">
+                <div class="input-row">
+                    
+
+                    <div class="input-group" >
+                        <label>Name</label>
+                        <input type="text" placeholder="Your Name" name="full_name">
+                    </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="text" placeholder="Your@Email.com" name="email">
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Subject of Message" name="subject">
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea rows="5"></textarea placeholder = "Type text here">
+                        <button type="submit">SEND</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="contact-right">
+            <h3>Reach Me</h3>
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>josuedjohnson@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>321-439-1851</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+</section>
+<!----JavaScript for Toggle Menu---->
+<script>
+    var navLinks = document.getElementById("navLinks")
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-100%"
+    }
+</script>
+
+
+</body>
+
+
+</html>
